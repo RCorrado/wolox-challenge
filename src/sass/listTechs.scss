@@ -1,0 +1,15 @@
+@import './media';
+
+.listed{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    @include md{
+        grid-template-columns: 40% 40%;
+    }
+
+    @include lg{
+        grid-template-columns: 30% 30% 30%;
+    }
+}

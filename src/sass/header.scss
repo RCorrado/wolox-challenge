@@ -1,0 +1,23 @@
+@import './colors';
+
+//Element style
+header{
+    width: 100%;
+    position: fixed;
+
+    nav {
+        display: flex;
+    
+        ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+//Classes
+.border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: $light_blue;
+}

@@ -1,0 +1,16 @@
+@import './media';
+
+.footer {
+    background-image: url('../assets/Backgrounds/Bg_Footer.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include md {
+        background-image: url('../assets/Backgrounds/Bg_Footer@2x.png');
+    }
+
+    @include lg {
+        background-image: url('../assets/Backgrounds/Bg_Footer@3x.png');
+    }
+}

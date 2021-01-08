@@ -1,0 +1,45 @@
+@import './colors';
+
+@font-face{
+    font-family: 'Montserrat';
+    src: '../assets/Fonts/Montserrat-Regular.ttf'
+}
+
+body{
+    font-family: 'Montserrat', serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*:focus{
+    outline: none;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $light_blue;
+    color: $white;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+.error{
+    color: red;
+}
+
+ul{
+    list-style: none;
+}

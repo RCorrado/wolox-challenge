@@ -1,0 +1,1 @@
+export const openLink = url_link => window.open(url_link, '_blank');

@@ -1,0 +1,63 @@
+@import './media';
+
+section{
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    @include md{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &.main{
+        background-image: url('../assets/Backgrounds/Bg_Header.png');
+
+        @include md {
+            background-image: url('../assets/Backgrounds/Bg_Header@2x.png');
+        }
+
+        @include lg {
+            background-image: url('../assets/Backgrounds/Bg_Header@3x.png');
+        }
+    }
+
+    &.media{
+        align-items: stretch;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+        }
+
+        .background{
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('../assets/img_woloxer.png');
+
+            @include md {
+                background-image: url('../assets/img_woloxer@2x.png');
+            }
+    
+            @include lg {
+                background-image: url('../assets/img_woloxer@3x.png');
+            }
+        }
+    }
+
+    &.benefits{
+        height: auto;
+
+        @include md{
+            height: 50vh;
+        }
+    }
+}

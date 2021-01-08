@@ -1,0 +1,21 @@
+//Device width
+//Pantallas entre 450px y 767px
+@mixin sm {
+    @media (min-width: 450px){
+        @content;
+    }
+}
+
+//Pantallas entre 768px y 990px
+@mixin md {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+//Pantallas mayores iguales a 991px
+@mixin lg {
+    @media (min-width: 991px){
+        @content;
+    }
+}

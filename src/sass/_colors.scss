@@ -1,0 +1,22 @@
+//HEX
+$light_blue: #2AA7DF;
+$light_greyblue: #F2F5FA;
+$white: #fff;
+$green: #97CF00;
+$black: #000;
+
+//RGBA
+$light_grey: rgba(0,0,0,.15);
+$middle_opacity_white: rgba($white, .8);
+
+//Classes
+.light_blue{ color: $light_blue };
+.background_light_blue{ background-color: $light_blue;}
+.light_greyblue{ color: $light_greyblue;}
+.background_light_greyblue{ background-color: $light_greyblue}
+.white{ color: $white };
+.background_white{ background-color: $middle_opacity_white; }
+.background_full_white{ background-color: $white; }
+.green{ color: $green; }
+.background-green{ background-color: $green; }
+.black { color: $black}
