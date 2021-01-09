@@ -45,7 +45,7 @@ const Register = (props) => {
             let reg = await register(name, lastName, country, state, mail, phone, password);
             localStorage.setItem('token', reg.token);
             props.tokenEvent(reg.token);
-            history.push('/');
+            history.push('/list');
         } catch (error) {
             console.log(error);
         }

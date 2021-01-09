@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Wolox Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Code Challenge de React.JS
 
-## Available Scripts
+## Horas totales destinadas al challenge: 12
 
-In the project directory, you can run:
+## Tecnologías utilizadas
 
-### `npm start`
+Para el desarrollo e implementación del code challenge se utilizó:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### React.JS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### React-router-dom 
 
-### `npm test`
+para Ruteo entre Screens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### SASS
 
-### `npm run build`
+para estilado
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Create-React-App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+para building de Front-End
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Firebase
 
-### `npm run eject`
+para Deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Git + GitHub
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+para versionado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deudas técnicas y especificaciones
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+En base a los requerimientos pasados se detalla lo siguiente
 
-## Learn More
+### Botón "Login" lleva a registro
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Si bien se reconoce que dicha decisión atentaría contra la Ux del sitio, se decidió utilizar ese criterio para respetar en la mayor medida posible el diseño enviado.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Listado de países y provincias
 
-### Code Splitting
+Para agilizar el proceso de carga de países y provincias (principalmente, para dar más realismo al contenido sin tener que investigar sobre departamentos/provincias de los países en cuestión) se implementa el package de npm country-state-city [https://www.npmjs.com/package/country-state-city]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### No se implementaron React.lazy/suspense ni linters
 
-### Analyzing the Bundle Size
+Respecto al primero, se implementó el concepto de dynamic imports referente a ES2020 y que también se encuentra en el apartado "División de código" de React [https://es.reactjs.org/docs/code-splitting.html]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Verbosidad de Views
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se reconoce que las vies Register y Techs podrían (y deberían) ser modularizadas tanto a nivel componentes como en sentido de funciones y métodos, principalmente teniendo en cuenta la escalabilidad y la atomicidad de los react components; sin embargo, por la naturaleza del challenge se decidió dejar de la manera en la que se encuentra
