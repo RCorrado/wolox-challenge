@@ -21,10 +21,7 @@ const Header = (props) => {
     const [showList, setShowing] = useState(false);
 
     //Handlers
-    const handleShown = () => {
-        setShowing(!showList);
-        props.blockEvent(!showList);
-    };
+    const handleShown = () => setShowing(!showList);
 
     //Effect al renderizar
     useEffect(() => {
